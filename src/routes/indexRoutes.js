@@ -2,7 +2,7 @@ const express = require('express')
 const Controller = require('../controllers/jobsControllers')
 //const { checkCredentialsExists, tokenVerification } = require("../middlewares/middlewares")
 const router = express.Router()
-
+router.get('/test', Controller.test);
 //Registrar datos de usuario LISTO
 router.post('/Register', /* checkCredentialsExists, */ Controller.createUser)
 
