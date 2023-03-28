@@ -18,7 +18,9 @@ const handleError = (res, error) => {
     res.status(error.code || 500).send({ error })
 };
 const Controller = {
-
+    test: (req, res) => {
+        res.send(''Hola mundo!!!);
+    },
     //controlador LISTO para loggear usuario
     loginUser: async (req, res) => {
         try {
