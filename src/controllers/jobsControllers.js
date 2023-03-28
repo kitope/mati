@@ -19,7 +19,7 @@ const handleError = (res, error) => {
 };
 const Controller = {
     test: (req, res) => {
-        res.send(''Hola mundo!!!);
+        res.send('Hola mundo!!!');
     },
     //controlador LISTO para loggear usuario
     loginUser: async (req, res) => {
